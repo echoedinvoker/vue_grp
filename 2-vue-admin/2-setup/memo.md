@@ -23,3 +23,5 @@
 ![Alt add vuetify](pic/09.jpg)
 
 ![Alt check result src](pic/10.jpg)
+
+- You can see that a bunch of HTML tags in the vue file are almost always changed to components of vuetify
