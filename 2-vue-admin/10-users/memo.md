@@ -25,9 +25,11 @@
 ### _Typescript error_
 
 **stack overflow**
+
 ![Alt stackoverflow about vue ref empty array error](pic/08.jpg)
 
 **fix**
+
 ![Alt fix the typescript error](pic/09.jpg)
 
 ### _Result_
