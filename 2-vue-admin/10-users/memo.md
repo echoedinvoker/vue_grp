@@ -12,6 +12,8 @@
 
 ## **Menu: Users navigator**
 
+> The 'User' here refers to an ambassador, different from the previous login users.
+
 ![Alt Users button](pic/05.jpg)
 
 ![Alt result](pic/06.jpg)
