@@ -21,3 +21,6 @@
 ## **Delete button**
 
 ![Alt delete](pic/08.jpg)
+
+- Confirm before delete is always good practice.
+- If we use typescript, we also define the type for its parameters when we define the function.
