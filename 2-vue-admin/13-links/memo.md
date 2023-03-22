@@ -12,6 +12,8 @@
 
 ![Alt copy paste template, modify and fetch](pic/04.jpg)
 
+- The backend uses the API path parameter to provide the corresponding data based on the user id, which is a useful skill.
+
 ## **Set interfaces and get Revenue**
 
 ![Alt observe structure](pic/05.jpg)
