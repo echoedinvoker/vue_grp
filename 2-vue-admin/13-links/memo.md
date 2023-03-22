@@ -20,4 +20,6 @@
 
 ![Alt interface and revenue](pic/06.jpg)
 
+- The part of (2) must handle the 'link' in 'link in links', so even if it's a bit complicated, it can't be handled by computed in the script
+
 ![Alt result](pic/07.jpg)
