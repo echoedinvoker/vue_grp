@@ -1,0 +1,18 @@
+{
+    "category-v2.single.toJob": "vue-grp",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/2-vue-admin/2-setup/memo.md",
+    "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
+    "chapter": "2. Vue Admin",
+    "section": "2. Setup",
+    "video.length": 3,
+    "time.comsuming": 21,
+    "lecturer.name.first": "Antonio",
+    "lecturer.name.last": "Papa",
+    "register.time": "2023-03-17T05:36:02Z",
+    "tag": [
+      "vue","admin","setup"
+    ],
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068604#content",
+    "description": "Front and back-end settings"
+  }
+
