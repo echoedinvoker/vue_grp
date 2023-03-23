@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/2-vue-admin/15-create-prod/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "2. Vue Admin",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "15. Creating Products",
+    "video.length": 6,
+    "time.comsuming": 65,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-23T00:46:22Z",
     "tag": [
-      "vue","admin"
+      "vue","admin","create","reactive","interface","form"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068724#content",
+    "description": "Create a new page for creating products with the form."
   }
 
