@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/2-vue-admin/16-update-prod/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "2. Vue Admin",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "16. Updating Products",
+    "video.length": 6,
+    "time.comsuming": 43,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-23T09:13:58Z",
     "tag": [
-      "vue","admin"
+      "vue","admin","reuse","situation","switch","put","update","edit","v-btn-toggle"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068732#content",
+    "description": "Add the functionality of updating product information."
   }
 
