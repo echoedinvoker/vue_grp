@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/2-vue-admin/14-products/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "2. Vue Admin",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "14. Products",
+    "video.length": 8,
+    "time.comsuming": 72,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-22T21:42:59Z",
     "tag": [
-      "vue","admin"
+      "vue","admin","pagination","product","typescript","interface","table","delete"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068722#content",
+    "description": "Create products page which has delete button on each product item."
   }
 
