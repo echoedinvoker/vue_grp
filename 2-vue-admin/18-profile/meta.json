@@ -1,6 +1,6 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/2-vue-admin/18-profile/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "2. Vue Admin",
     "section": "",
@@ -8,9 +8,9 @@
     "time.comsuming": ,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-24T02:47:06Z",
     "tag": [
-      "vue","admin"
+      "vue","admin","password",""
     ],
     "video.link": "",
     "description": ""
