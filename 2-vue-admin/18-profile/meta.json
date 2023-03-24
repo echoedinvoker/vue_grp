@@ -3,16 +3,16 @@
     "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/2-vue-admin/18-profile/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "2. Vue Admin",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "18. Profile",
+    "video.length": 7,
+    "time.comsuming": 72,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
     "register.time": "2023-03-24T02:47:06Z",
     "tag": [
-      "vue","admin","password",""
+      "vue","admin","password","user","info","interface","issue","network","request"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068740#content",
+    "description": "Create a user profile page to change account information and password."
   }
 
