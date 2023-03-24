@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/2-vue-admin/17-orders/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "2. Vue Admin",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "17. Orders",
+    "video.length": 4,
+    "time.comsuming": 63,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-23T22:36:35Z",
     "tag": [
-      "vue","admin"
+      "vue","admin","order","expension","vuetify","item","table"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068736#content",
+    "description": "Create orders page."
   }
 
