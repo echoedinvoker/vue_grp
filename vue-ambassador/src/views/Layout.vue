@@ -31,4 +31,14 @@
 <script setup lang="ts">
 import Nav from '@/components/Nav.vue'
 import Header from '@/components/Header.vue'
+import { onMounted } from 'vue';
+import axios from 'axios';
+import { useUser } from '@/store/user';
+
+const user = useUser()
+
+onMounted(async () => {
+  const { data } = await axios.get('user')
+  user.setUser(data)
+})
 </script>
