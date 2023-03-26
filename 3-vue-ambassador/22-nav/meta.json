@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/22-nav/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "22. Navigation",
+    "video.length": 7,
+    "time.comsuming": 60,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-25T12:25:01Z",
     "tag": [
-      "vue","ambassador"
+      "vue","ambassador","header","nav","bootstrap","migrate","pinia"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068778#content",
+    "description": "To create the Navigation section, use the Bootstrap material directly and migrate the pinia codes from other projects."
   }
 

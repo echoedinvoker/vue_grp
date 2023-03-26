@@ -7,14 +7,14 @@
       </ul>
 
       <div class="col-md-3 text-end" v-if="user">
-        <button type="button" class="btn btn-outline-primary me-2">Logout</button>
+        <a href='#' class="btn btn-outline-primary me-2" @click="logout">Logout</a>
         <button type="button" class="btn btn-primary">
           {{ user.first_name }} {{ user.last_name }}
         </button>
       </div>
       <div class="col-md-3 text-end" v-else>
-        <button type="button" class="btn btn-outline-primary me-2">Login</button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
+        <RouterLink to="/login" class="btn btn-outline-primary me-2">Login</RouterLink>
+        <RouterLink to="/register" class="btn btn-primary">Sign-up</RouterLink>
       </div>
     </header>
   </div>
@@ -23,10 +23,16 @@
 <script setup lang="ts">
 import { useUser } from '@/store/user';
 import { computed } from '@vue/reactivity';
+import axios from 'axios';
 
 const store = useUser()
 
 const user = computed(() => {
   return store.user 
 }) 
+
+async function logout() {
+  await axios.post('logout')
+  store.setUser(null)
+}
 </script>
