@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/24-watcher/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "24. Watchers",
+    "video.length": 4,
+    "time.comsuming": 30,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-26T11:47:47Z",
     "tag": [
-      "vue","ambassador"
+      "vue","ambassador","logout","watch","problem","reactive"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068814#content",
+    "description": "Refactor the Nav page and use watch to solve the problem that the Header component is not reactive."
   }
 

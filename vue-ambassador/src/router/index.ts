@@ -2,11 +2,16 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Layout from '@/views/Layout.vue'
 import Login from '@/views/Login.vue'
 import Register from '@/views/Register.vue'
+import ProductsFrontend from '@/views/ProductsFrontend.vue'
+import Profile from '@/views/Profile.vue'
 
 const routes: Array<RouteRecordRaw> = [
-  { path: '', component: Layout},
   { path: '/login', component: Login},
   { path: '/register', component: Register},
+  { path: '', component: Layout, children: [
+    { path: '', component: ProductsFrontend },
+    { path: '/profile', component: Profile },
+  ] },
 ]
 
 const router = createRouter({
