@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/25-route/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "25. Route",
+    "video.length": 6,
+    "time.comsuming": 66,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-26T22:10:45Z",
     "tag": [
-      "vue","ambassador"
+      "vue","ambassador","route","profile","class","toggle","v-if"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068820#content",
+    "description": "Create two sub-pages under the Layout, and use Route to control whether the component and class are displayed or not."
   }
 
