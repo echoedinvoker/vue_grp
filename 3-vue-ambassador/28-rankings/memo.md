@@ -10,11 +10,15 @@
 
 ## **Model of Ranking**
 
+> When our key is a variable, the model is defined in a special way.
+
 ![Alt model ](pic/04.jpg)
 
 ![Alt set type of ref and get](pic/05.jpg)
 
 ## **Multiple params of v-for**
+
+> v-for can not only iterate value, but also the key and index.
 
 ![Alt v-for](pic/06.jpg)
 
