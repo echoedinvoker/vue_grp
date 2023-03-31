@@ -7,6 +7,7 @@
       </ul>
 
       <div class="col-md-3 text-end" v-if="user">
+        <RouterLink to="/rankings" class="btn me-2">Rankings</RouterLink>
         <RouterLink to="/stats" class="btn me-2">Stats</RouterLink>
         <a href='#' class="btn btn-outline-primary me-2" @click="logout">Logout</a>
         <RouterLink to="/profile" class="btn btn-primary">

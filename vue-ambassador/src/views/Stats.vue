@@ -1,6 +1,4 @@
 <template>
-  <div class="album py-5 bg-light">
-    <div class="container">
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -20,8 +18,6 @@
           </tbody>
         </table>
       </div>
-    </div>
-  </div>
 </template>
 
 <script setup lang="ts">

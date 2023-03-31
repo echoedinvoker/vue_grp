@@ -66,7 +66,7 @@ const password = ref("");
 const passwordConfirm = ref("");
 
 const submit = async () => {
-  await axios
+  const { data } =await axios
     .post("register", {
       first_name: firstName.value,
       last_name: lastName.value,
@@ -74,12 +74,7 @@ const submit = async () => {
       password: password.value,
       password_confirm: passwordConfirm.value,
     })
-    .then((response) => {
-      router.replace('/login')
-    })
-    .catch((error) => {
-      console.log(error);
-    })
+  console.log(data)
 };
 </script>
 <script lang="ts"></script>
