@@ -7,10 +7,11 @@
       </ul>
 
       <div class="col-md-3 text-end" v-if="user">
+        <RouterLink to="/stats" class="btn me-2">Stats</RouterLink>
         <a href='#' class="btn btn-outline-primary me-2" @click="logout">Logout</a>
-        <button type="button" class="btn btn-primary">
+        <RouterLink to="/profile" class="btn btn-primary">
           {{ user.first_name }} {{ user.last_name }}
-        </button>
+        </RouterLink>
       </div>
       <div class="col-md-3 text-end" v-else>
         <RouterLink to="/login" class="btn btn-outline-primary me-2">Login</RouterLink>
@@ -40,4 +41,5 @@ async function logout() {
   store.setUser(null)
 }
 </script>
+
 

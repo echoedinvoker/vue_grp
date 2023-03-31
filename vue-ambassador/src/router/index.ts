@@ -4,6 +4,7 @@ import Login from '@/views/Login.vue'
 import Register from '@/views/Register.vue'
 import ProductsFrontend from '@/views/ProductsFrontend.vue'
 import Profile from '@/views/Profile.vue'
+import Stats from '@/views/Stats.vue'
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/login', component: Login},
@@ -11,6 +12,7 @@ const routes: Array<RouteRecordRaw> = [
   { path: '', component: Layout, children: [
     { path: '', component: ProductsFrontend },
     { path: '/profile', component: Profile },
+    { path: '/stats', component: Stats },
   ] },
 ]
 

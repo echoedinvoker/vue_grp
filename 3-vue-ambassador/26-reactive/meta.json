@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/26-reactive/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "26. Reactive",
+    "video.length": 9,
+    "time.comsuming": 63,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-27T00:45:46Z",
     "tag": [
       "vue","ambassador"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068824#content",
+    "description": "Refactoring Profile, using reactive to create states about form in the process."
   }
 

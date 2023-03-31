@@ -23,10 +23,11 @@ import { computed } from '@vue/reactivity';
 const user = useUser()
 const route = useRoute()
 
-const showHeader = computed(() => !route.path.includes('/profile'))
+const showHeader = computed(() => !route.path.includes('/profile') && !route.path.includes('/stats'))
 
 onMounted(async () => {
   const { data } = await axios.get('user')
   user.setUser(data)
 })
 </script>
+
