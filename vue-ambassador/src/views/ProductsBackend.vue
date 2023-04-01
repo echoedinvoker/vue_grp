@@ -11,8 +11,8 @@ import Products from './Products.vue';
 const products = ref<Product[]>([])
 
 onMounted(async () => {
-  const { data } = await axios.get<Product[]>('products/frontend')
-  // console.log(data)
+  // const { data } = await axios.get<Product[]>('products/frontend')
+  const { data: { data } } = await axios.get('products/backend')
   products.value = data
 }) 
 </script>

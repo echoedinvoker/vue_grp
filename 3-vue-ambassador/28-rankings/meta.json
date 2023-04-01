@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/28-rankings/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "28. Rankings",
+    "video.length": 7,
+    "time.comsuming": 68,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-03-31T09:16:12Z",
     "tag": [
-      "vue","ambassador"
+      "vue","ambassador","v-for","multiple","ranking","variable","key","typescript","type"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068834#content",
+    "description": "Create a Rankings page, the key of this page is variable(user name), so it must be handled in a special way."
   }
 

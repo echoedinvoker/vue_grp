@@ -2,8 +2,10 @@
   <div class="container">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><RouterLink to="/" class="nav-link px-2" :class="{'link-secondary': !isBackend}">Frontend</RouterLink></li>
-        <li><RouterLink to="/profile" class="nav-link px-2" :class="{'link-secondary': isBackend}">Backend</RouterLink></li>
+        <!-- <li><RouterLink to="/" class="nav-link px-2" :class="{'link-secondary': !isBackend}">Frontend</RouterLink></li> -->
+        <li><RouterLink to="/" class="nav-link px-2 link-secondary" exact-active-class="link-dark">Frontend</RouterLink></li>
+        <!-- <li><RouterLink to="/profile" class="nav-link px-2" :class="{'link-secondary': isBackend}">Backend</RouterLink></li> -->
+        <li><RouterLink to="/backend" class="nav-link px-2 link-secondary" active-class="link-dark">Backend</RouterLink></li>
       </ul>
 
       <div class="col-md-3 text-end" v-if="user">
@@ -26,12 +28,10 @@
 import { useUser } from '@/store/user';
 import { computed } from '@vue/reactivity';
 import axios from 'axios';
-import { useRoute } from 'vue-router';
 
 const store = useUser()
-const route = useRoute()
 
-const isBackend = computed(() => !route.path.includes('/profile'))
+// const isBackend = computed(() => !route.path.includes('/profile'))
 
 const user = computed(() => {
   return store.user 
