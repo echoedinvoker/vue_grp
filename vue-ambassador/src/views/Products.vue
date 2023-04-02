@@ -1,13 +1,26 @@
 <template>
+  <div class="col-md-12 mb-4" v-if="link">
+    <div class="alert alert-info" role="alert">
+      {{ link }}
+    </div>
+  </div>
+  <div class="col-md-12 mb-4" v-if="error">
+    <div class="alert alert-danger" role="alert">
+      {{ error }}
+    </div>
+  </div>
   <div class="col-md-12 md-4 input-group">
     <input class="form-control" placeholder="Search" @keyup="search($event)"/>
-      <div class="input-group-append">
-        <select class="form-select" @change="sort($event)">
-          <option>Select</option>
-          <option value="asc">Price Ascending</option>
-          <option value="desc">Price Descending</option>
-        </select>
-      </div>
+    <div class="input-group-append" v-if="selected.length > 0">
+      <button class="btn btn-info" @click="generate">Generate Link</button>
+    </div>
+    <div class="input-group-append">
+      <select class="form-select" @change="sort($event)">
+        <option>Select</option>
+        <option value="asc">Price Ascending</option>
+        <option value="desc">Price Descending</option>
+      </select>
+    </div>
   </div>
 
 
@@ -33,11 +46,32 @@
 <script setup lang="ts">
 import { Filter } from '@/model/Filter';
 import { Product } from '@/model/Product';
+import axios from 'axios';
 import { ref } from 'vue';
 
 const selected = ref<number[]>([])
+const link = ref('')
+const error = ref('')
 
-// defineProps<{
+const generate = async () => {
+  try {
+    const { data } = await axios.post('links', {
+      products: selected.value
+    })
+
+    link.value = `Link generated: ${process.env.VUE_APP_CHECKOUT_URL}/${data.code}`
+
+  } catch (_) {
+    error.value = 'You must be logged in to generate links'
+  } finally {
+    setTimeout(() => {
+      link.value = ''
+      error.value = ''
+    }, 5000)
+  }
+}
+
+// defineProps
 const props = defineProps<{
   products: Product[]
   filters: Filter
