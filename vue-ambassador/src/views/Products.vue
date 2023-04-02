@@ -12,8 +12,8 @@
 
 
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-    <div class="col" v-for="product in products">
-      <div class="card shadow-sm">
+    <div class="col" v-for="product in products" @click="select(product.id)">
+      <div class="card shadow-sm" :class="{selected: selected.some(s => s === product.id)}">
         <img :src="product.image" height="200"/>
         <div class="card-body">
           <p class="card-text">{{ product.title }}</p>
@@ -33,6 +33,9 @@
 <script setup lang="ts">
 import { Filter } from '@/model/Filter';
 import { Product } from '@/model/Product';
+import { ref } from 'vue';
+
+const selected = ref<number[]>([])
 
 // defineProps<{
 const props = defineProps<{
@@ -40,6 +43,15 @@ const props = defineProps<{
   filters: Filter
   lastPage: number
 }>()
+
+const select = (id: number) => {
+  console.log('id')
+  if (selected.value.some(s => s === id)) {
+    selected.value = selected.value.filter(s => s !== id)
+    return
+  }
+  selected.value = [ ...selected.value, id ]
+}
 
 const emit = defineEmits<{
   (e: 'set-filters', ev: any): void
@@ -70,3 +82,9 @@ const loadMore = () => {
 }
 
 </script>
+
+<style scoped>
+.selected {
+  border: 4px solid darkcyan;
+}
+</style>

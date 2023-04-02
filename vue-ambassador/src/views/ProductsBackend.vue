@@ -39,8 +39,6 @@ const load = async (f: Filter) => {
 
   products.value = filters.page === 1 ? data.data : [ ...products.value, ...data.data ]
   lastPage.value = data.meta.last_page
-  console.log(lastPage.value)
-
 }
 
 onMounted(async () => {

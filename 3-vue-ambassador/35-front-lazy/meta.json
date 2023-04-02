@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/35-front-lazy/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "35. Frontend Lazy Loading",
+    "video.length": 6,
+    "time.comsuming": 55,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-04-02T06:43:30Z",
     "tag": [
-      "vue","ambassador"
+      "vue","ambassador","lazy","load","frontend","hide","lastPage","page"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068956#content",
+    "description": "Implementing lazy loading functionality of frontend page."
   }
 
