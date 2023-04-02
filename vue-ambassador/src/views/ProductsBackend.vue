@@ -1,18 +1,32 @@
 <template>
-  <Products :products="products" />
+  <Products :products="products" @set-filters="load($event)"/>
 </template>
 
 <script setup lang="ts">
+import { Filter } from '@/model/Filter';
 import { Product } from '@/model/Product';
 import axios from 'axios';
-import { onMounted, ref } from 'vue';
+import { onMounted, reactive, ref } from 'vue';
 import Products from './Products.vue';
 
 const products = ref<Product[]>([])
+const filters = reactive({
+  s: ''
+})
+
+const load = async (f: Filter) => {
+  filters.s = f.s
+
+  const arr = []
+  if (filters.s) {
+    arr.push(`s=${filters.s}`)
+  }
+
+  const { data: { data } } = await axios.get(`products/backend?${arr.join('&')}`)
+  products.value = data
+}
 
 onMounted(async () => {
-  // const { data } = await axios.get<Product[]>('products/frontend')
-  const { data: { data } } = await axios.get('products/backend')
-  products.value = data
+  await load(filters)
 }) 
 </script>

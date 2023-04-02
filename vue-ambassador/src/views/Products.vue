@@ -1,4 +1,8 @@
 <template>
+  <div class="col-md-12 md-4 input-group">
+    <input class="form-control" placeholder="Search" @keyup="search($event)"/>
+  </div>
+
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
     <div class="col" v-for="product in products">
       <div class="card shadow-sm">
@@ -20,5 +24,13 @@ import { Product } from '@/model/Product';
 defineProps<{
   products: Product[]
 }>()
+
+const emit = defineEmits<{
+  (e: 'set-filters', ev: any): void
+}>()
+
+const search = (ev: any) => {
+  emit('set-filters', { s: ev.target.value })
+}
 
 </script>

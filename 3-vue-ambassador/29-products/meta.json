@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/29-products/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "29. Products",
+    "video.length": 9,
+    "time.comsuming": 89,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-04-01T22:32:55Z",
     "tag": [
-      "vue","ambassador"
+      "vue","ambassador","backend","nav","active","frontend","props"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068844#content",
+    "description": "Outsource the content of the frondend page to another component and make a backend page with navigation."
   }
 
