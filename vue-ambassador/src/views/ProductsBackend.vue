@@ -1,5 +1,5 @@
 <template>
-  <Products :products="products" :filters="filters" @set-filters="load($event)"/>
+  <Products :products="products" :filters="filters" :last-page="lastPage" @set-filters="load($event)"/>
 </template>
 
 <script setup lang="ts">
@@ -15,6 +15,7 @@ const filters = reactive<Filter>({
   sort: '',
   page: 1
 })
+const lastPage = ref(0)
 
 const load = async (f: Filter) => {
   filters.s = f.s
@@ -33,9 +34,13 @@ const load = async (f: Filter) => {
     arr.push(`page=${filters.page}`)
   }
 
-  const { data: { data } } = await axios.get(`products/backend?${arr.join('&')}`)
-  // products.value = data
-  products.value = filters.page === 1 ? data : [ ...products.value, ...data ]
+  // const { data: { data } } = await axios.get(`products/backend?${arr.join('&')}`)
+  const { data } = await axios.get(`products/backend?${arr.join('&')}`)
+
+  products.value = filters.page === 1 ? data.data : [ ...products.value, ...data.data ]
+  lastPage.value = data.meta.last_page
+  console.log(lastPage.value)
+
 }
 
 onMounted(async () => {

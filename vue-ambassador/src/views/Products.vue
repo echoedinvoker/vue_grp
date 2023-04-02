@@ -25,7 +25,7 @@
     </div>
   </div>
 
-  <div class="d-flex justify-content-center mt-4">
+  <div class="d-flex justify-content-center mt-4" v-if="filters.page < lastPage">
     <button class="btn btn-primary" @click="loadMore">Load More</button>
   </div>
 </template>
@@ -38,6 +38,7 @@ import { Product } from '@/model/Product';
 const props = defineProps<{
   products: Product[]
   filters: Filter
+  lastPage: number
 }>()
 
 const emit = defineEmits<{

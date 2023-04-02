@@ -1,5 +1,5 @@
 <template>
-  <Products :products="filteredProducts" :filters="filters" @set-filters="filterProducts($event)"/>
+  <Products :products="filteredProducts" :filters="filters" :last-page="lastPage" @set-filters="filterProducts($event)"/>
 </template>
 
 <script setup lang="ts">
@@ -13,15 +13,17 @@ const allProducts = ref<Product[]>([])
 const filteredProducts = ref<Product[]>([])
 const filters = reactive<Filter>({
   s: '',
-  sort: ''
+  sort: '',
+  page: 1
 })
+const perPage = 9
+const lastPage = ref(0)
 
 const filterProducts = (f: Filter) => {
   filters.s = f.s
   filters.sort = f.sort
+  filters.page = f.page
 
-  console.log(f)
-  // filteredProducts.value = allProducts.value.filter(p => {
   let products = allProducts.value.filter(p => {
     return p.title.toLowerCase().indexOf(f.s.toLowerCase()) >= 0 ||
       p.description.toLowerCase().indexOf(f.s.toLowerCase()) >= 0
@@ -39,12 +41,14 @@ const filterProducts = (f: Filter) => {
     })
   }
 
-  filteredProducts.value = products
+  lastPage.value = Math.ceil(products.length / perPage)
+  filteredProducts.value = products.slice(0, perPage * filters.page)
 }
 
 onMounted(async () => {
   const { data } = await axios.get<Product[]>('products/frontend')
   allProducts.value = data
-  filteredProducts.value = data
+  filteredProducts.value = data.slice(0, perPage * filters.page)
+  lastPage.value = Math.ceil(data.length / perPage)
 }) 
 </script>

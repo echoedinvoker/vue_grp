@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/34-back-lazy/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "34. Backend Lazy Loading",
+    "video.length": 4,
+    "time.comsuming": 51,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-04-02T05:26:33Z",
     "tag": [
-      "vue","ambassador"
+      "vue","ambassador","append","more","pagination","page","lazy","load"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068954#content",
+    "description": "Implementing Load More button in backend page for lazy loading functionality."
   }
 
