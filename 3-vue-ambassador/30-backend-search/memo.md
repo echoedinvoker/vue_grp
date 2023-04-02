@@ -15,9 +15,3 @@
 - The load function is a query based on the value in the state 'filters', rather than a direct value from the custom event.
 
 ![Alt result](pic/05.jpg)
-
-## **Copy paste codes to frontend page**
-
-![Alt copy codes to frontend](pic/06.jpg)
-
-- Note that the red part is the difference between the front and back ends.
