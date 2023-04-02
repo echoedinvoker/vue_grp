@@ -24,6 +24,10 @@
       </div>
     </div>
   </div>
+
+  <div class="d-flex justify-content-center mt-4">
+    <button class="btn btn-primary" @click="loadMore">Load More</button>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -44,14 +48,23 @@ const search = (ev: any) => {
   // emit('set-filters', { s: ev.target.value })
   emit('set-filters', {
     ...props.filters,
-    s: ev.target.value
+    s: ev.target.value,
+    page: 1
   })
 }
 
 const sort = (ev: any) => {
   emit('set-filters', { 
     ...props.filters,
-    sort: ev.target.value 
+    sort: ev.target.value,
+    page: 1
+  })
+}
+
+const loadMore = () => {
+  emit('set-filters', { 
+     ...props.filters,
+     page: props.filters.page + 1
   })
 }
 
