@@ -1,18 +1,18 @@
 {
     "category-v2.single.toJob": "vue-grp",
-    "git.link": "",
+    "git.link": "https://github.com/echoedinvoker/vue_grp/blob/master/3-vue-ambassador/32-back-sort/memo.md",
     "course": "Vue 3, Vuetify and Nuxt.js: A Rapid Guide",
     "chapter": "3. Vue Ambassador",
-    "section": "",
-    "video.length": ,
-    "time.comsuming": ,
+    "section": "32. Backend Sorting",
+    "video.length": 4,
+    "time.comsuming": 44,
     "lecturer.name.first": "Antonio",
     "lecturer.name.last": "Papa",
-    "register.time": "",
+    "register.time": "2023-04-02T03:31:11Z",
     "tag": [
-      "vue","ambassador"
+      "vue","ambassador","select","option","props","emit"
     ],
-    "video.link": "",
-    "description": ""
+    "video.link": "https://www.udemy.com/course/vue-influencer/learn/lecture/26068932#content",
+    "description": "Create sorting functionality for back-end data."
   }
 
